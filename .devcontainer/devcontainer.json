@@ -1,0 +1,30 @@
+{
+    "name": "PyTorch Development",
+    "image": "nvcr.io/nvidia/pytorch:24.01-py3",
+    "workspaceFolder": "/realwaste",
+    "workspaceMount": "source=${localWorkspaceFolder},target=/realwaste,type=bind,consistency=delegated",
+    "runArgs": [
+        "--gpus", "all",
+        "-v", "${localWorkspaceFolder}/data:/realwaste/data:consistent",
+        "-v", "${localWorkspaceFolder}/results:/realwaste/results:consistent"
+    ],
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "MS-CEINTL.vscode-language-pack-de",
+                "ms-python.python",
+                "ms-python.vscode-pylance",
+                "ms-toolsai.jupyter",
+                "ms-toolsai.jupyter-keymap",
+                "ms-toolsai.jupyter-renderers",
+                "njpwerner.autodocstring",
+                "ms-vsliveshare.vsliveshare",
+                "VisualStudioExptTeam.vscodeintellicode",
+                "GitHub.copilot",
+                "GitHub.copilot-chat"
+            ]
+        }
+    },
+    "postCreateCommand": "/realwaste/.devcontainer/setup-devcontainer.sh",
+    "remoteUser": "root"
+}
