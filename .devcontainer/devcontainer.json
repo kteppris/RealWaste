@@ -1,12 +1,12 @@
 {
     "name": "PyTorch Development",
     "image": "nvcr.io/nvidia/pytorch:24.01-py3",
-    "workspaceFolder": "/realwaste",
-    "workspaceMount": "source=${localWorkspaceFolder},target=/realwaste,type=bind,consistency=delegated",
+    "workspaceFolder": "/RealWaste",
+    "workspaceMount": "source=${localWorkspaceFolder},target=/RealWaste,type=bind,consistency=delegated",
     "runArgs": [
         "--gpus", "all",
-        "-v", "${localWorkspaceFolder}/data:/realwaste/data:consistent",
-        "-v", "${localWorkspaceFolder}/results:/realwaste/results:consistent"
+        "-v", "${localWorkspaceFolder}/data:/RealWaste/data:consistent",
+        "-v", "${localWorkspaceFolder}/results:/RealWaste/results:consistent"
     ],
     "customizations": {
         "vscode": {
@@ -25,6 +25,6 @@
             ]
         }
     },
-    "postCreateCommand": "/realwaste/.devcontainer/setup-devcontainer.sh",
+    "postCreateCommand": "/RealWaste/.devcontainer/setup-devcontainer.sh",
     "remoteUser": "root"
 }

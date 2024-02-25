@@ -8,7 +8,7 @@ sh -c "$(wget -O- https://github.com/deluan/zsh-in-docker/releases/download/v1.1
     -p git 
 
 # Configure Git to recognize the repository directory as safe
-git config --global --add safe.directory /realwaste
+git config --global --add safe.directory /RealWaste
 
 # Install Python dependencies from requirements
-pip install -r /realwaste/requirements-docker.txt
+pip install -r /RealWaste/requirements-docker.txt
