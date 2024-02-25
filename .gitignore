@@ -165,3 +165,6 @@ results/
 logs/InceptionWaste/version_0/events.out.tfevents.1707694629.jupyter-keno-2eteppris1.3111.0
 
 tb_logs/
+
+# Undesired MAC Os files
+.DS_Store
