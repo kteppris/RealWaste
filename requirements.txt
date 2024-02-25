@@ -2,8 +2,7 @@ torch==2.1.0
 pytorch-lightning==2.2.0.post0
 torchvision==0.16.0
 tensorboard
-seaborn==0.13.2
-scikit-learn
+seaborn==0.13.1
 Pillow==9.4.0
 optuna==3.5.0
 tensorboard
