@@ -16,3 +16,6 @@ plotly==5.15.0
 scikit-image==0.19.3
 tensorboardx
 ray
+gdown
+ipywidgets
+nbformat>=4.2.0
